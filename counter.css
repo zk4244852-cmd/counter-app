@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 220px;
+  width: 200px;
+  background-color: beige;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.screen {
+  background-color: white;
+  height: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+/* Mouse over par dark screen mode */
+.screen:hover {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.but {
+  display: flex;
+  gap: 20px;
+}
+
+/* Custom Buttons Styling */
+.custom-btn {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none; /* Text highlight hone se rokta hai */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Click hone par button ka dabna (Press effect) */
+.custom-btn:active {
+  transform: scale(0.92);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.add-btn {
+  background-color: #2563eb; /* Stylish Blue */
+}
+
+.reset-btn {
+  background-color: #dc2626; /* Stylish Red */
+}
